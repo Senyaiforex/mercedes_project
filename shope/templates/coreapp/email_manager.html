@@ -1,0 +1,18 @@
+{% extends 'coreapp/base-for-messages.html' %}
+{% load static %}
+{% autoescape off %}
+{% block content %}
+{% block container %}
+<h1>Покупка товара</h1>
+<h3>Уважаемый менеджер</h3>
+<p>Поступила заявка на нашем сайте </p>
+<a class="pass" href="{{ protocol }}://{{ domain }}">hatiman</a>
+<p>Контактные данные клиента: <br>
+    Имя: {{name}} <br>
+    Телефон: {{tel}} <br>
+    Электронная почта: {{email}}
+</p>
+<p>Hatiman</p>
+{% endblock %}
+{% endblock %}
+{% endautoescape %}
